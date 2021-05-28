@@ -1,0 +1,60 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
+}
+
+h2 {
+    color: #861a6d;
+}
+
+header h2 {
+    color: #ffc8e4;
+}
+
+.site-footer{
+    background-image: linear-gradient(#ffc8df, white);
+    padding: 20px 0;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, #dd37a9, #c53096, #60106B);
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+ .navbar {
+    background-color: #901CAD;
+}
+
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
+
+  
+.carousel-inner > .item > img {
+    margin: 0 auto;
+  }
+  .slide{
+    background-position: center;
+    background-size: cover;
+  }
+
+.carousel-caption {
+    background-color: rgba(87, 7, 7, 0.5);
+}
+
+.carousel {
+    border: solid #dd37a0;
+}
