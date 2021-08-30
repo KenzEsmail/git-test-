@@ -1,0 +1,12 @@
+        h1 {
+                text-align: center;
+            }
+            survey-form{
+                width: 80%;
+                margin: auto;
+            }
+            #submit-btn {
+                background-color: rgb(11, 91, 122);
+                 color: white;
+            }
+      

@@ -1,0 +1,45 @@
+body {
+    background: #b6a5b6;
+    font-family: Tahoma, Arial, sans-serif;
+    
+
+    height: 800px;
+  border: 15px solid rgb(34, 28, 3);
+  padding: 30px;
+  margin: 0px;
+}
+
+h1 {
+    color: rgb(74, 3, 92);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+h2 {
+    
+    
+  
+  align-content: center;
+  color: rgb(3, 59, 92);
+    font: 32px Garamond, Helvetica, sans-serif;
+}
+    
+            
+       
+table {
+    width: 60%;
+    color: rgb(22, 3, 92);
+    font: 20px Garamond, Helvetica, serif;
+}
+}
+
+thead {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+#submit-btn {
+    display: block;
+}

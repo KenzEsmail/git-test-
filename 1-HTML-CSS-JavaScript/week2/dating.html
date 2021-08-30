@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+             <meta charset="utf-8"/> 
+              <title>dating Form </title>
+               <style>
+             body {
+                font-family: Verdana, Arial , sans-serif;
+                 }
+                  p {
+                 margin: 0;
+                 }
+                 legend {
+                  background-color: purple;
+                   border-radius: 10px;
+                     color: white;
+                      padding: 12px;
+                 }
+                 fieldset {
+                  background-color: white;
+                   border: 10px solid darkblue;
+                    border-radius: 20px;
+                     margin-bottom: 10px;
+                      width: 720px;
+                  }
+              
+                 div {
+                  margin: 10px;
+                  }
+                 label {
+                  display: inline-block;
+                   text-align: right;
+                     vertical-align: top;
+                       width: 200px;
+              }
+             input[type="radio"]+label, input[type="checkbox"]+label{
+                 width: auto;
+                  background: darkcyan;
+                   border-radius: 10px;
+                    color: white;
+                      font-size: 20px;
+                         padding: 12px;
+               }
+            .range-caption {
+                 background: darkcyan;
+                 color: white;
+                 padding: 6px;
+                 text-align: center;
+               }
+               input[type="submit"] {
+                   background: darkcyan;
+                   border-radius: 10px;
+                   color: white;
+                   font-size: 20px;
+                   padding: 12px;
+               }
+               divhover{
+                   color: blue;
+               }
+        </style>
+        </head>
+        <body>
+        <h1>Enter Your Details For Our Dating Website</h1>
+        <form class="dating-form" action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="POST" enctype="multipart/form-data"> 
+            
+            <fieldset>
+                <legend>Your Face </legend>
+                    <div>
+                        <label for="ChooseFile">Choose Faile: </label> 
+                        <input type="file" id="fileToUpload" />
+                    </div>
+                    <p> Image Preview: </p> 
+                    <img id="preview" alt="imge selected"width="500"> 
+                    
+            </fieldset>
+            <fieldset>
+                <legend>Your Details </legend>
+                    <div>
+                         Name: <input type="text" name="YourFullName" placeholder="Your Full Name"/>
+                         <div>
+                             Gender:
+                             <input type="radio" name="Gender" required value="Woman"/> woman
+                             <input type="radio" name="Gender" required value="Man"/> Man
+                         </div>
+                         <div>
+                            <label for="age:">Age</label>
+                            <input type="number" name="Age" placeholder="Age"/>
+                         </div>
+                         <div>
+                            <label for="DateoOfBirth">Date of Birth:</label>
+                             <input type="date" id="datofBirth" name="DateoOfBirth"/>
+                             </div>
+                              <div>
+                             <label for="FavoriteColor:">Favorite Color:</label>
+                             <input type="color" id="color" name="color"/>
+                        </div>
+                                     <div>
+                                       <label for="Country:">Country:</label>
+                                        <select name="Country" id="Country">
+                                           <option value="brazil">Brazil</option>
+                                        <option value="france">France</option>
+                                     <option value="japan">Japan</option> 
+                                       <option value="libya">Libya</option>
+                                     <option value="usa">U.S.A.</option>
+                                     </select>   
+                                  </div>
+                        <div>
+                        <label for="salry">Salary</label>
+                         <span class="range-cabtion">Poor</span>
+                         <input type="range" id="Salary" name="Salary" min="0" max=100/> 
+                         <span class="range-cabtion">Rich</span>
+
+                         </div>        
+                         </fieldset>
+                         <fieldset>
+                         <legend>Your Contact Infromation</legend>
+                         <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                         </div>
+                         <div>
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="tel" name="phone">
+                         </div>
+                         <div>
+                            <label for="address">Address</label>
+                            <textarea cols="40" id="address" name="address"></textarea>
+                         </div>
+                         <div>
+                            <label Contact Method(s):></label>
+                            <input type="checkbox" name="contact" id="emailcheckbox" value="email">
+                            <label for="emailcheckbox">Email</label>
+                            <input type="checkbox" name="Contact" id="phonecheckbox" value="phone">
+                            <label for="phonecheckbox">phone</label>
+                         </div>
+                         </fieldset>
+                         <div>
+                            <input type="submit">
+                          </div>
+                        </form>
+                        <script src="https://url.nucamp.co/datingjs"></script>
+                    </body>
+                    </html>
+                 
+               
+               
+                    
